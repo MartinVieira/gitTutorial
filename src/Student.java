@@ -1,15 +1,18 @@
 /**
  * Created by ethan on 2017-02-07.
  */
+import java.util.List;
+
 public class Student extends Person {
     String major;
     boolean fulltime;
     List<Course> courseList;
 
-    public Student(String name, String emailAddress, String major, boolean fulltime) {
+    public Student(String name, String emailAddress, String major, boolean fulltime, List<Course> courseList) {
         super(name, emailAddress);
         this.major = major;
         this.fulltime = fulltime;
+        this.courseList = courseList;
     }
 
     public String toString() {
